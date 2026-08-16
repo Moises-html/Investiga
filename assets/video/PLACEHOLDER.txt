@@ -1,0 +1,7 @@
+Coloque aqui os DOIS vídeos:
+
+- video-01.mp4      -> primeiro vídeo (arquivo #05, aparece depois do puzzle)
+- video-final.mp4   -> vídeo da declaração final (só abre depois do quiz "continuar investigação")
+
+Os nomes precisam ser exatamente esses, ou você pode mudar os caminhos
+dentro de js/scenes.js (procure por "assets/video/").

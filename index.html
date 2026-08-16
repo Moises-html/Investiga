@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>O Caso Helena — O Vídeo Perdido</title>
+<meta name="description" content="Uma investigação romântica e cinematográfica criada para Helena.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="util-bar">
+    <button class="util-btn" id="mute-toggle" aria-label="Ativar ou desativar o som" title="Som">🔊</button>
+    <button class="util-btn" id="motion-toggle" aria-label="Ativar ou desativar animações" title="Reduzir animações">✦</button>
+    <button class="util-btn" id="reset-toggle" aria-label="Reiniciar investigação" title="Reiniciar investigação">↺</button>
+  </div>
+
+  <main id="app" aria-live="polite"></main>
+
+  <!-- Caixa de diálogo reutilizável -->
+  <div class="dialogue-box" id="dialogue-box" aria-hidden="true" role="dialog" aria-label="Mensagem">
+    <p class="dialogue-name" id="dialogue-name">Moisés</p>
+    <p class="dialogue-text" id="dialogue-text"></p>
+    <div class="dialogue-actions">
+      <button class="btn small ghost" id="dialogue-continue">continuar</button>
+    </div>
+  </div>
+
+  <!-- Áudio (substitua pelos arquivos reais em assets/audio) -->
+  <audio id="bg-music" loop preload="none">
+    <source src="assets/audio/romantic.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="sfx-click" preload="none"><source src="assets/audio/click.mp3" type="audio/mpeg"></audio>
+  <audio id="sfx-clue" preload="none"><source src="assets/audio/clue.mp3" type="audio/mpeg"></audio>
+  <audio id="sfx-unlock" preload="none"><source src="assets/audio/unlock.mp3" type="audio/mpeg"></audio>
+  <audio id="sfx-type" preload="none"><source src="assets/audio/type.mp3" type="audio/mpeg"></audio>
+  <audio id="final-music" preload="none" loop>
+    <source src="assets/audio/alianca-tribalistas.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="cena4-music" preload="none" loop>
+    <source src="assets/audio/love-me.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="js/storage.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/dialogue.js"></script>
+  <script src="js/clues.js"></script>
+  <script src="js/puzzle.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/cena4.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

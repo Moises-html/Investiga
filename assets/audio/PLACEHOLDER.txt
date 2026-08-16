@@ -1,0 +1,11 @@
+Coloque aqui os áudios:
+
+- romantic.mp3            -> música ambiente que toca durante toda a investigação
+- click.mp3, clue.mp3, unlock.mp3, type.mp3  -> pequenos efeitos sonoros
+- alianca-tribalistas.mp3 -> "Aliança" (Tribalistas), toca na tela final quando
+                              aparece "Helena, eu amo você. ❤️"
+- love-me.mp3              -> toca assim que a cena bônus "O Último Recado" começa
+                               (para automaticamente ao fechar essa cena)
+
+Os nomes precisam ser exatamente esses, ou você pode mudar os caminhos
+dentro de index.html (procure pelas tags <audio>).
